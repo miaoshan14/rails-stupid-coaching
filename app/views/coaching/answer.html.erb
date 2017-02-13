@@ -1,0 +1,16 @@
+<div class="container text-center">
+  <div>
+    <%= @message %>
+    <p> - was your question</p>
+    <br>
+    <%= @reponse %>
+    <p> - is your coach answer :)</p>
+  </div>
+
+  <form action="/answer" method="get" >
+    <input type="text" name="query" placeholder="New question ?" class="form-control">
+
+  </form>
+
+  <%= link_to "Ask a new question", ask_path %>
+</div>
